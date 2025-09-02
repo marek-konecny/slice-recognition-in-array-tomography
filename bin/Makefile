@@ -1,6 +1,6 @@
 CXX := g++
-OPENCV_INC := /usr/local/include/opencv4
-OPENCV_LIB := /usr/local/lib64
+OPENCV_INC := /usr/include/opencv4
+OPENCV_LIB := /usr/lib64
 
 CXXFLAGS := -std=c++17 -O3 -march=native -fopenmp -Wall -I$(OPENCV_INC)
 LDFLAGS  := -fopenmp -L$(OPENCV_LIB) -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
